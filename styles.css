@@ -222,7 +222,16 @@ h2 {
   font-family: var(--serif); font-style: italic; font-weight: 500;
   font-size: 19px; line-height: 1.6; color: var(--burgundy-deep); text-wrap: pretty;
 }
-.review figcaption { display: flex; flex-direction: column; gap: 2px; }
+.review figcaption { display: flex; align-items: center; gap: 14px; text-align: left; }
+.review__who { display: flex; flex-direction: column; gap: 2px; }
+.avatar {
+  flex: none; width: 48px; height: 48px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font: 500 22px/1 var(--sans); color: #fff;
+}
+.avatar--purple { background: #8E3AA6; }
+.avatar--teal { background: #0F766E; }
+.avatar--wine { background: var(--burgundy); }
 .review__name { font-weight: 600; font-size: 16px; line-height: 1.4; color: var(--burgundy-deep); }
 .review__source { font-size: 13.5px; line-height: 1.4; color: var(--rose); }
 
